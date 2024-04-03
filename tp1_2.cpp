@@ -3,7 +3,7 @@
 // Declaracion de funciones
 int Cuadrado(int num);
 void CuadradoVoid(int num);
-void MostrarDireccionContenido(int *ptr);
+void MostrarDireccionContenido(int *puntero);
 void Invertir(int *a, int *b);
 void Orden(int *a, int *b) ;
 
@@ -67,9 +67,9 @@ void CuadradoVoid(int num) {
 }
 
 // Función que muestra la dirección y el contenido de una variable
-void MostrarDireccionContenido(int *ptr) {
-    printf("Dirección de la variable Num2: %p\n", (void *)ptr);
-    printf("Contenido de la variable Num2: %d\n", *ptr);
+void MostrarDireccionContenido(int *puntero) {
+    printf("Dirección de la variable Num2: %p\n", puntero);
+    printf("Contenido de la variable Num2: %d\n", *puntero);
 }
 
 // Función que invierte los valores entre dos variables
